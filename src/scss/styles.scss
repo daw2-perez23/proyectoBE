@@ -1,0 +1,71 @@
+@import "~bootstrap/scss/bootstrap";
+@import "node_modules/mdb-ui-kit/src/scss/custom/_styles.scss";
+a{
+    text-decoration: none;
+}
+
+.text{
+    color: #44006b;
+}
+
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(271, 100%, 50%) 35%,
+        hsl(271, 100%, 50%) 35%,
+        hsl(271, 100%, 50%) 35%,
+        hsl(271, 100%, 50%) 35%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(315, 52%, 46%) 15%,
+        hsl(315, 52%, 46%) 15%,
+        hsl(315, 52%, 46%) 15%,
+        hsl(315, 52%, 46%) 15%,
+        transparent 100%);
+}
+
+
+.white-color{
+  color: white;
+  text-align: center;
+}
+
+
+.transparent-bottons{
+  background-color: transparent;
+  border: 0px;
+}
+
+.table-responsive {
+  max-height: 200px;
+  overflow: scroll;
+}
+
+a::after{
+  content: " ";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .8s;
+
+}
+
+a:hover:after{
+  width: 100%;
+  background: #333;
+}
+
+.botones::after{
+  content: " ";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .8s;
+}
+
+.botones:hover:after{
+  width: 100%;
+  background: #333;
+}
